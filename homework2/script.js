@@ -1,3 +1,22 @@
+//Задача 1
+const METERS_IN_KILOMETR = 1000;
+const METERS_IN_INCH = 0.0254;
+const PI = 3.14;
+
+let N = prompt('Введите киллометраж');
+let D = prompt('Введите диаметр колеса');
+
+let result = (N * METERS_IN_KILOMETR) * ((D * METERS_IN_INCH) * PI)
+let result_for = result * 4;
+
+alert(result);
+alert(result_for);
+
+
+
+
+
+//Задача 2
 word = prompt('Введите число');
 const one_day = 'День';
 const two_day = 'Дня';
