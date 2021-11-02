@@ -6,7 +6,7 @@ const PI = 3.14;
 let N = prompt('Введите киллометраж');
 let D = prompt('Введите диаметр колеса');
 
-let result = (N * METERS_IN_KILOMETR) / ((D * METERS_IN_INCH) * PI)
+let result = (N * METERS_IN_KILOMETR) / (D * METERS_IN_INCH) * PI
 let result_for = result * 4;
 
 alert(result);
