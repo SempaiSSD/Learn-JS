@@ -17,18 +17,39 @@ alert(result_for);
 
 
 //Задача 2
-word = prompt('Введите число');
-const one_day = 'День';
-const two_day = 'Дня';
-const over_day = 'Дней';
-const n = word % 10;
-if (word === 1) {
-	console.log(`${word} ${one_day}`)
-}
-if (word >= 2 && word <= 4) {
-	console.log(`${word} ${two_day}`);
-}
-else if (word >= 5 && word <= 20) {
-	console.log(`${word} ${over_day}`);
-}
+let days = +(prompt('Введите день', '0'));
+let result = '';
+let mod10 = days % 10;
+let mod100 = days % 100;
 
+if (mod100 > 10 && mod100 < 20) {
+	result = 'Дней'
+} else if (mod10 === 1) {
+	result = 'День'
+} else if (mod10 > 1 && mod10 < 5) {
+	result = 'Дня';
+} else {
+	result = 'Дней';
+}
+alert(`${days} ${result}`);
+
+//Задача 2 SWITCH
+let days = +(prompt('Введите день'));
+
+let mod100 = days % 100;
+let mod10 = days % 10;
+let result = '';
+if (mod100 > 10 && mod100 < 20) {
+	result = 'Дней'
+} else {
+	switch (mod10) {
+		case 1: result = 'День'; break;
+		case 2:
+		case 3:
+		case 4:
+			result = 'Дня';
+			break;
+		default: result = 'Дней';
+	}
+}
+alert(`${days} ${result}`);
