@@ -16,7 +16,7 @@ alert(`Ответ: ${result1}, ${result2}`);
 //Задание 2 (Мини-игра "Угадай число")
 let min = 0;
 let max = 100;
-trys = 0;
+let trys = 0;
 const MAX_TRYS = 15;
 do {
 	num = min + (max - min) / 2;
