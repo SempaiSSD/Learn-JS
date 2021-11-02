@@ -1,3 +1,4 @@
+//Задание 2
 let min = 0;
 let max = 100;
 trys = 0;
