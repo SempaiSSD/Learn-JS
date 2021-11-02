@@ -16,7 +16,7 @@ alert(result_for);
 
 
 
-//Задача 2
+//Задача 2 (Склонение слово "День")
 let days = +(prompt('Введите день', '0'));
 let result = '';
 let mod10 = days % 10;
