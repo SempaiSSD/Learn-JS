@@ -1,3 +1,4 @@
+//Задание 3 (Развернуть слово)
 let arr = prompt('Введите слово', '')
 arr = arr.split('');
 console.log(arr);
