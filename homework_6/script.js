@@ -5,6 +5,16 @@ const MS_DAY = MS_HOUR * 24;
 const MONTH_NAME = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
 
 //Задача 3 Напишите функцию get_day(date), которая возвращает день недели от задан-ной даты.
+//Вариант 1
+function get_week_day(day) {
+	let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+	return days[day.getDay()]
+}
+let day = new Date(1997, 06, 08);
+alert(get_week_day(day));
+
+
+//Вариант 2
 function get_day(day) {
 	return new Date(day).toLocaleString('ru-Ru', { weekday: 'long' });
 }
