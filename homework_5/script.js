@@ -16,16 +16,32 @@ function call_random() {
 
 
 //Напишите функцию get_max( arr ), которая находит максимальное значение в заданном массиве.
+
+//Вариант1 - Минимальное значение
+let array = [-123, 132, -424, 231, -1314, 113, -1313];
+let arr = []
+function get_min(arr) {
+	arr = Math.min(...array);
+	console.log(arr)
+}
+get_min(arr);
+
+
+
+//Вариант 2
+let array = [10, 20, -30, -22, -5, 40, 24, 30];
 function get_max(arr) {
 	let max_num = arr[0];
-
+	// console.log(max_num)
 	for (let i in arr) {
-		if (arr[i] > max_num) max_num = arr[i];
+		console.log(i)
+		if (arr[i] <= max_num) max_num = arr[i];
 	}
 	return max_num;
 }
+alert(get_max(array));
 
-function call_get_max() {
-	let array = [10, 20, -30, -22, -5, 40, 24, 30];
-	alert(get_max(array));
-}
+// function call_get_max() {
+// 	let array = [10, 20, -30, -22, -5, 40, 24, 30];
+// 	alert(get_max(array));
+// }
