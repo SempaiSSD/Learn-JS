@@ -1,3 +1,18 @@
+// Напишите функцию get_order(string), которая отсортирует все слова в заданном предложении string в алфавитном порядке.
+// 	Например: get_order("ноты акустика гитара"), функция должна вернуть "акустика гитара ноты"
+
+let arr = ['Фаня', 'Кора', 'Гоша', 'Инокентий'];
+function get_order(string) {
+	if (typeof arr === 'string') {
+		console.log('Введите строку')
+	} else {
+		return arr.sort().join(' ');
+	}
+}
+console.log(get_order(arr));
+
+
+
 //Напишите функцию random(min, max), 
 //которая будет возвращать случае целое число от min до max
 function random(min, max) {
