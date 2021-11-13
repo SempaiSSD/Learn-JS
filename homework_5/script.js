@@ -42,13 +42,13 @@ function call_random() {
 
 //Напишите функцию get_max( arr ), которая находит максимальное значение в заданном массиве.
 
-//Вариант1 - Минимальное значение
+//Вариант1
 let array = [-123, 132, -424, 231, -1314, 113, -1313];
 let arr = []
-function get_min(arr) {
-	return Math.min(...array);
+function get_max(arr) {
+	return Math.max(...array);
 }
-console.log(get_min(array));
+console.log(get_max(array));
 
 
 
@@ -66,3 +66,20 @@ function get_max(arr) {
 alert(get_max(array));
 
 
+
+
+// Есть объект points с оценками.Напишите код, который выведет сумму всех оценок.
+let points = {
+	"Вася": 200,
+	"Петя": 300,
+	"Даша": 250,
+	"Андрей": 150,
+	"Сергей": 450,
+};
+function sum_points() {
+	let sum = 0;
+	for (let i of Object.values(points)) {
+		sum += i;
+	} return sum;
+}
+console.log(sum_points());
