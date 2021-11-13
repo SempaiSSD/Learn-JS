@@ -1,5 +1,5 @@
 // Задача № 1 Напишите функцию get_min(arr), которая находит минимальное значение в заданном массиве.
-
+//Вариант 1
 let array = [-7, -3, 0, 3, 7];
 let arr = [];
 function get_min(arr) {
@@ -8,6 +8,16 @@ function get_min(arr) {
 	return arr;
 }
 get_min(arr);
+
+//Вариант2
+let arr = [-23, 4, 5, 12, -52];
+function get_min() {
+	if (Array.isArray === arr) {
+		console.log('Данные введены некорректно');
+	}
+	return Math.min(...arr);
+}
+console.log(get_min());
 
 
 
