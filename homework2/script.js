@@ -5,7 +5,7 @@ const PI = 3.14;
 
 let N = +(prompt('Сколько проехала киллометров машина?', '0'));
 let D = +(prompt('Какой диаметр колеса?', '0'));
-let result = (N * MKM) / (D * Inch) * PI
+let result = (N * MKM) / ((D * Inch) * PI)
 let resFor = result * 4;
 if (isNaN(N) || isNaN(D)) {
 	console.error('Введите числовое значение')
