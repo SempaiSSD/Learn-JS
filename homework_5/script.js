@@ -12,6 +12,17 @@ function get_order(string) {
 console.log(get_order(arr));
 
 
+// Напишите функцию get_random(arr), которая вернет случайный элемент входящего массива arr.
+
+let array = [32, 'greet', 84];
+function get_random() {
+	if (Array.isArray === array) {
+		console.log('Данные введены некорректно');
+	}
+	return array[Math.floor(Math.random() * array.length)];
+}
+console.log(get_random(array));
+
 
 //Напишите функцию random(min, max), 
 //которая будет возвращать случае целое число от min до max
@@ -29,17 +40,15 @@ function call_random() {
 
 
 
-
 //Напишите функцию get_max( arr ), которая находит максимальное значение в заданном массиве.
 
 //Вариант1 - Минимальное значение
 let array = [-123, 132, -424, 231, -1314, 113, -1313];
 let arr = []
 function get_min(arr) {
-	arr = Math.min(...array);
-	console.log(arr)
+	return Math.min(...array);
 }
-get_min(arr);
+console.log(get_min(array));
 
 
 
@@ -56,7 +65,4 @@ function get_max(arr) {
 }
 alert(get_max(array));
 
-// function call_get_max() {
-// 	let array = [10, 20, -30, -22, -5, 40, 24, 30];
-// 	alert(get_max(array));
-// }
+
