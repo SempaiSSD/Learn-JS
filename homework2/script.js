@@ -1,16 +1,18 @@
 //Задача 1
-const METERS_IN_KILOMETR = 1000;
-const METERS_IN_INCH = 0.0254;
+const MKM = 1000;
+const Inch = 0.0254;
 const PI = 3.14;
 
-let N = prompt('Введите киллометраж');
-let D = prompt('Введите диаметр колеса');
+let N = +(prompt('Сколько проехала киллометров машина?', '0'));
+let D = +(prompt('Какой диаметр колеса?', '0'));
+let result = (N * MKM) / (D * Inch) * PI
+let resFor = result * 4;
+if (isNaN(N) || isNaN(D)) {
+	console.error('Введите числовое значение')
+}
+alert(`${result} ${resFor}`);
 
-let result = (N * METERS_IN_KILOMETR) / (D * METERS_IN_INCH) * PI
-let result_for = result * 4;
 
-alert(result);
-alert(result_for);
 
 
 
