@@ -1,0 +1,30 @@
+	body{
+	display: flex;
+	flex-wrap: wrap;
+}
+.toBlue{
+	background: skyblue;
+	width: 70px;
+	height: 70px;
+	margin: 10px;
+}
+.toViolet{
+	background: violet;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+.toRed{
+background: red;
+width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 25px 50px 25px;
+    border-color: transparent transparent #ff7700 transparent;
+	background: white;
+  }
