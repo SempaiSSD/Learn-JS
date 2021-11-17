@@ -1,0 +1,11 @@
+ul{
+width: 350px;
+height: auto;
+border: 1px solid gray;
+}
+li{
+
+	list-style: none;
+}
+
+
