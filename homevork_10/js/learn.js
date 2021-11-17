@@ -8,6 +8,8 @@ const HTML = document.documentElement;
 const BODY = document.body;
 
 
+//Вариант 1 - никаких ошибок, статус 200, но ничего на странице не отображает
+
 
 // async function getResponse() {
 // 	let response = await fetch('http://jsonplaceholder.typicode.com/photos')
@@ -29,7 +31,7 @@ const BODY = document.body;
 // getResponse();
 
 
-
+//Вариант 2 выдает ошибку что не найден юзер в функции...
 
 async function getData() {
 	let response = await fetch('https://jsonplaceholder.typicode.com/users')
