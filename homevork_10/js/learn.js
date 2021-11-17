@@ -6,48 +6,6 @@
 
 const HTML = document.documentElement;
 const BODY = document.body;
-
-// async function getResponse() {
-// 	let response = await fetch('http://jsonplaceholder.typicode.com/photos')
-// 	let content = await response.json()
-// 	content = content.splice(0, 10)
-
-// 	let list = document.querySelector('.posts')
-
-
-// 	for (let key in content) {
-// 		list.innetHTML += `
-// 		<li class='post'>
-// 			<h4>${content[key].title}</h4>
-// 			<img src='${content[key].url}' width = '300'>
-// 		</li>
-// 		`
-// 	}
-// }
-// getResponse();
-
-
-
-// $(document).ready(function () {
-// 	async function getData() {
-// 		let response = await fetch('https://jsonplaceholder.typicode.com/users')
-// 		let content = await response.json();
-// 		// console.log(content)
-
-// 		function newObj() {
-// 			for (let i in content) {
-// 				let user = content[i]
-// 				console.log(user)
-// 			} // - до этого момента все работает
-// 			let createBlock = document.createElement('div');
-// 			createBlock = user[0]
-// 			BODY.append(createBlock);
-// 		}
-// 		newObj();
-// 	}
-// 	getData()
-// })
-
 $(document).ready(function () {
 	async function getResponse() {
 		let responce = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -89,3 +47,46 @@ $(document).ready(function () {
 	}
 	getResponse();
 });
+// Не ввыдает ошибок, но ничего на страницу не выводит.
+
+// async function getResponse() {
+// 	let response = await fetch('http://jsonplaceholder.typicode.com/photos')
+// 	let content = await response.json()
+// 	content = content.splice(0, 10)
+
+// 	let list = document.querySelector('.posts')
+
+
+// 	for (let key in content) {
+// 		list.innetHTML += `
+// 		<li class='post'>
+// 			<h4>${content[key].title}</h4>
+// 			<img src='${content[key].url}' width = '300'>
+// 		</li>
+// 		`
+// 	}
+// }
+// getResponse();
+
+
+// Жалуется на то что не может найти обьект в функции, хоть он в ней обьявлен
+// 
+// 	async function getData() {
+// 		let response = await fetch('https://jsonplaceholder.typicode.com/users')
+// 		let content = await response.json();
+// 		// console.log(content)
+
+// 		function newObj() {
+// 			for (let i in content) {
+// 				let user = content[i]
+// 				console.log(user)
+// 			} // - до этого момента все работает
+// 			let createBlock = document.createElement('div');
+// 			createBlock = user[0]
+// 			BODY.append(createBlock);
+// 		}
+// 		newObj();
+// 	}
+// 	getData()
+// 
+
