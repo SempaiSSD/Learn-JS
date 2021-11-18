@@ -5,7 +5,9 @@ let n2 = +(prompt('Введите число 2'));
 let result1 = 0; //kolvo % 6
 let result2 = 0;// summa
 for (let i = n1; i < n2; i++) {
-	if (i % 6 === 0) {
+	if(NaN(n1)) || NaN(n2){
+	alert('Введите число')
+	}else if (i % 6 === 0) {
 		console.log(i);
 		result1++;
 		result2 = result2 + i;
