@@ -16,7 +16,7 @@ console.log(get_order(arr));
 
 let array = [32, 'greet', 84];
 function get_random() {
-	if (Array.isArray === array) {
+	if (Array.isArray != array) {
 		console.log('Данные введены некорректно');
 	}
 	return array[Math.floor(Math.random() * array.length)];
