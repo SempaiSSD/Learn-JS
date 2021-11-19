@@ -3,7 +3,7 @@
 
 let arr = ['Фаня', 'Кора', 'Гоша', 'Инокентий'];
 function get_order(string) {
-	if (typeof arr === 'string') {
+	if (typeof arr != 'string') {
 		console.log('Введите строку')
 	} else {
 		return arr.sort().join(' ');
