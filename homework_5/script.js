@@ -44,7 +44,6 @@ function call_random() {
 
 //Вариант1
 let array = [-123, 132, -424, 231, -1314, 113, -1313];
-let arr = []
 function get_max(arr) {
 	return Math.max(...array);
 }
